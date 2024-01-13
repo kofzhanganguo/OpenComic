@@ -7,6 +7,9 @@
 		"library": "库",
 		"recents": "最近添加",
 		"recentlyOpened": "最近打开",
+		"favorites": "收藏",
+		"labels": "标签",
+		"editLabels": "编辑标签",
 		"images": "图片",
 		"sort": {
 			"main": "排列",
@@ -26,6 +29,7 @@
 		},
 		"contextMenu": {
 			"remove": "移除",
+			"favorite": "收藏",
 			"openFileLocation": "打开文件所在位置",
 			"openFolderLocation": "打开文件夹位置",
 			"addPoster": "添加封面",
@@ -41,6 +45,7 @@
 		"addToLibrary": "添加到库",
 		"unsupportedFile": "该文件不受支持",
 		"reload": "重新加载",
+		"retry": "重试",
 		"search": "搜索",
 		"filterCurrentPage": "筛选当前页面",
 		"language": "语言",
@@ -55,7 +60,16 @@
 		"continueReading": "继续阅读",
 		"emptyIndex": "库里还没有漫画。",
 		"emptyFolder": "此文件夹中没有兼容的文件。",
-		"emptyRecentlyOpened": "没有最近打开的文件。"
+		"emptyRecentlyOpened": "没有最近打开的文件。",
+		"emptyFavorites": "没有收藏的漫画",
+		"emptyLabel": "没有该标签下漫画"
+	},
+	"servers": {
+		"offlineMode": "离线模式",
+		"error": {
+			"connection": "不可连接至服务器",
+			"folderNotFound": "在服务器上找不到文件夹"
+		}
 	},
 	"reading": {
 		"prevChapter": "上一章",
@@ -67,11 +81,12 @@
 		"pages": {
 			"main": "页面设置",
 			"pageLayout": "页面布局",
-			"ebookLayout": "",
+			"ebookLayout": "电子书布局",
 			"colorFilters": "颜色滤镜",
 			"slide": "横向翻页",
 			"scroll": "纵向翻页",
 			"adjustToWidth": "适应屏幕",
+			"notEnlargeMoreThanOriginalSize": "请勿放大超过原始尺寸",
 			"margin": "边距",
 			"marginHorizontal": "水平边距",
 			"marginVertical": "垂直边距",
@@ -93,7 +108,7 @@
 			"contrast": "对比度",
 			"sepia": "怀旧风格",
 			"invert": "反转",
-			"negative": "",
+			"negative": "负片",
 			"hueRotate": "色调转换",
 			"tone": "色调",
 			"colorize": "着色",
@@ -106,31 +121,31 @@
 			"savedPresets": "保存预设",
 			"multipleTonePresets": "多个色调预设",
 			"oneTonePresets": "单个色调预设",
-			"integrated": "",
-			"ebookTheme": "",
-			"fontSize": "",
-			"fontFamily": "",
-			"useEbookFont": "",
-			"useEbookTheme": "",
-			"useAppTheme": "",
-			"fontWeight": "",
-			"bold": "",
-			"italic": "",
-			"textAlign": "",
-			"textCenter": "",
-			"textJustify": "",
-			"textLeft": "",
-			"textRight": "",
-			"maxWidth": "",
-			"letterSpacing": "",
-			"wordSpacing": "",
-			"paragraphSpacing": "",
-			"paragraphLineHeight": "",
-			"lineHeight": "",
-			"textColors": "",
-			"text": "",
-			"links": "",
-			"background": ""
+			"integrated": "整体",
+			"ebookTheme": "电子书主题",
+			"fontSize": "字体大小",
+			"fontFamily": "字体系列",
+			"useEbookFont": "使用电子书字体",
+			"useEbookTheme": "使用电子书主题",
+			"useAppTheme": "使用应用程序主题",
+			"fontWeight": "字体粗细",
+			"bold": "粗体",
+			"italic": "斜体",
+			"textAlign": "文本对齐",
+			"textCenter": "居中对齐",
+			"textJustify": "两端对齐",
+			"textLeft": "左对齐",
+			"textRight": "右对齐",
+			"maxWidth": "最大宽度",
+			"letterSpacing": "字母间距",
+			"wordSpacing": "字间距",
+			"paragraphSpacing": "段落间距",
+			"paragraphLineHeight": "段落行高",
+			"lineHeight": "行高",
+			"textColors": "文本颜色",
+			"text": "文本",
+			"links": "链接",
+			"background": "背景"
 		},
 		"magnifyingGlass": {
 			"main": "放大镜",
@@ -169,21 +184,30 @@
 		"reading": {
 			"main": "阅读设置",
 			"maxMargin": "最大水平和垂直边距",
-			"globalZoom": "应用全局缩放而不是逐个图片（仅在垂直阅读时）",
-			"globalZoomSlide": "",
+			"globalZoom": "全局缩放而不是逐个图片（垂直阅读）",
+			"globalZoomSlide": "全局缩放而不是逐个图片（幻灯片阅读）",
 			"moveZoomWithMouse": "使用鼠标移动缩放（禁用通过拖放移动）",
 			"scrollWithMouse": "通过沿着屏幕边缘移动鼠标来滚动（禁用拖放滚动）",
 			"startReadingInFullScreen": "开始全屏阅读",
 			"trackingAtTheEnd": "在章节/卷末尾进行跟踪"
 		},
+		"imageInterpolation": {
+			"main": "图像插值",
+			"interpolationMethod": "插值法",
+			"disabled": "禁用",
+			"downscaling": "缩小图像",
+			"downscalingDescription": "此方法仅在需要降低图像分辨率时使用，插值方法不适用于 PDF 和 EPUB 或动态图像",
+			"upscaling": "放大图像",
+			"upscalingDescription": "此方法仅在需要放大图像分辨率时使用，插值方法不适用于 PDF、EPUB 或动态图像。警告：锐利的方法在放大时可能会很慢"
+		},
 		"navigation": {
 			"main": "导航",
-			"folders": "",
-			"files": "",
+			"folders": "导航（文件夹）",
+			"files": "导航（文件）",
 			"ignoreSingleFoldersLibrary": "忽略单个文件夹（自动打开）",
-			"whenOpenFolderFirstImageOrContinueReading": "",
+			"whenOpenFolderFirstImageOrContinueReading": "直接在第一张图片或继续阅读中打开，而不是文件列表",
 			"whenOpenFolderContinueReading": "直接在继续阅读中打开而不是文件列表",
-			"useTheFirstImageAsPoster": "",
+			"useTheFirstImageAsPoster": "使用第一张图片作为海报（当前没有海报时）",
 			"showFullPathLibrary": "打开库时显示漫画完整路径",
 			"showFullPathOpened": "打开文件或文件夹时显示完整路径"
 		},
@@ -195,7 +219,7 @@
 			"startOnStartup": "开机启动时打开 OpenComic"
 		},
 		"theme": {
-			"systemNightMode": ""
+			"systemNightMode": "当操作系统执行此操作时切换到夜间/明亮模式"
 		},
 		"releases": {
 			"main": "检查新版本",
@@ -223,6 +247,23 @@
 			"folder": "文件夹",
 			"noFolders": "无文件夹"
 		},
+		"servers": {
+			"main": "服务器",
+			"add": "添加服务器",
+			"noServers": "没有服务器",
+			"deleteServer": "删除服务器",
+			"confirmDelete": "您确定要删除该服务器吗？",
+			"supportedProtocols": "支持的协议",
+			"protocolsDescription": "仅连接到受信任的服务器并尽可能使用安全协议",
+			"serverNameExists": "该服务器名称已存在",
+			"name": "服务器名称",
+			"path": "服务器路径",
+			"user": "用户名",
+			"pass": "密码",
+			"domain": "范围",
+			"onlyIn": "仅用于",
+			"showOnLibrary": "在库展示漫画"
+		},
 		"storage": {
 			"main": "存储",
 			"cache": "缓存",
@@ -234,7 +275,11 @@
 			"clearCache": "清除缓存",
 			"temporaryFiles": "临时文件",
 			"temporaryFilesDescription": "在这里，压缩文件根据需要进行解压缩，这在关闭 OpenComic 时会自动删除",
-			"removeTemporaryFiles": "删除临时文件"
+			"removeTemporaryFiles": "删除临时文件",
+			"temporaryFilesMaxSize": "最大临时文件数",
+			"temporaryFilesMaxSizeDescription": "当临时文件超过此大小时将被删除，优先考虑较旧的未使用文件",
+			"temporaryFilesMaxOld": "最大临时文件时间",
+			"temporaryFilesMaxOldDescription": "超过此时间未使用的临时文件将被删除"
 		}
 	},
 	"menu": {
@@ -266,7 +311,7 @@
 		"help": {
 			"main": "帮助",
 			"about": "关于 OpenComic",
-			"funding": "资金！",
+			"funding": "赞助！",
 			"bug": "报告错误"
 		}
 	},
@@ -293,7 +338,15 @@
 			"readingConfigRemove": "您确定要删除此配置吗？",
 			"readingNumColorsGenerate": "要生成的颜色数量",
 			"readingPresetName": "预设名称",
-			"readingGotoPage": ""
+			"readingGotoPage": "转到页面"
+		},
+		"labels": {
+			"empty": "无标签",
+			"newLabel": "新建标签",
+			"labelName": "标签名称",
+			"labelExists": "该标签已存在",
+			"deleteLabel": "删除标签",
+			"confirmDelete": "您确定要删除此标签吗？"
 		},
 		"release": {
 			"title": "新版本可用<b>{{releaseName}}</b>",
@@ -307,7 +360,8 @@
 		"undo": "撤消",
 		"dismiss": "去除",
 		"remove": "删除",
-		"download": "下载"
+		"download": "下载",
+		"close": "关闭"
 	},
 	"error": {
 		"uncompress": {
